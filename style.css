@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 100vh;
+      align-items: center;
+      background-image: url('sky.jpg');
+      background-size: cover;
+      background-position: top center;
+      background-color: #c7e0e1;
+      font-family: sans-serif;
+  }
+
+.form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+::placeholder {
+  color: black;
+  opacity: 1; 
+}
+
+/*:-ms-input-placeholder { 
+ color:black;
+}*/
+
+::-ms-input-placeholder { 
+ color:black;
+}
+#search
+{
+      width: 260px;
+    overflow: hidden;
+    font-size: 20px;
+    margin: 8px 0;
+    padding: 8px 0;
+    border:none;
+    border-bottom: 3px solid #67a3ff;
+    outline: none;
+    background: none;
+}
+#search-button
+{
+    color: #494949;
+    text-transform: uppercase;
+    text-decoration: none;
+    background:#85bfff;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 11px;
+    border: 2px solid #9281d9;
+    display: inline-block;
+  
+    transition: all 0.4 ease 0s;
+}
+
+#search-button:hover{
+
+  color: #ffffff;
+  background: #1a0077;
+  border-color: #073cc1;
+  transition: all 0.4s ease 0s;
+  
+  
+  
+  }
+.date
+{
+  text-align: center;
+}
+.location ,.temperature
+  {
+      height:15vh;
+      align-items: center;
+    /*  display: flex;
+      width:50%;*/
+      justify-content: space-around;
+      font-weight: bold;
+  }
+  .temperature
+  {
+      flex-direction: column;
+      font-size: xx-large;
+  }
+  .degree-section
+  {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+  }
+  .degree-section span
+  {
+      margin: 10px;
+      font-size: 30px;
+  }
+  .degree-section h2{
+      font-size: 40px;
+  }
+  .f
+  {
+    text-align: center;
+  }

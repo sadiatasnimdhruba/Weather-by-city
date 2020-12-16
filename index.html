@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<title>cityWeather app</title>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="form">
+    <form>
+      <input type="search" id="search" placeholder="Enter city name" />
+      <button id="search-button">Search</button>
+    </form>
+  </div><br><br>
+  <h3 class="current"></h3>
+  <div class="location">
+    <h1 class="location-timezone">Welcome to the weather app</h1><br>
+    <div class="date"></div>
+  </div>
+  <div class="temperature">
+    <div class="degree-section">
+      <h2 class="temperature-degree"> </h2>
+    </div>
+    <div class="temperature-description">
+      <h3></h3>
+    </div>
+  </div>
+  <div class="img">
+    <img id="temp-icon" src="welcome.png" alt="Getting weather icon..." width="200" height="200">
+  </div><br>
+  <div>
+    <p class="f"><span class="feels"></span></p>
+  </div>
+  <div>
+    <span class="humidity"></span>
+    <!--<img src="humidity.png" width="20" height="20">-->
+    <br><br>
+  </div>
+
+
+
+
+  <script src="script.js">
+  </script>
+</body>
+
+</html>
