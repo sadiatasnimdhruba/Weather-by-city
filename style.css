@@ -12,7 +12,6 @@
       background-image: url('sky.jpg');
       background-size: cover;
       background-position: top center;
-      background-color: #c7e0e1;
       font-family: sans-serif;
   }
 
@@ -28,9 +27,9 @@
   opacity: 1; 
 }
 
-/*:-ms-input-placeholder { 
+:-ms-input-placeholder { 
  color:black;
-}*/
+}
 
 ::-ms-input-placeholder { 
  color:black;
@@ -84,15 +83,16 @@
       width:50%;*/
       justify-content: space-around;
       font-weight: bold;
+      text-align: center;
   }
   .temperature
   {
       flex-direction: column;
       font-size: xx-large;
+      padding:32px;
   }
   .degree-section
   {
-      display: flex;
       align-items: center;
       cursor: pointer;
   }
@@ -107,4 +107,16 @@
   .f
   {
     text-align: center;
+  }
+  .temperature-degree
+  {
+    text-align: center;
+  }
+  .location-timezone
+  {
+    padding:10px 0;
+  }
+  #temp-icon
+  {
+    padding:12px 0;
   }

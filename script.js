@@ -12,9 +12,10 @@ const searchButton = document.getElementById("search-button");
 
 searchButton.addEventListener('click', (e) => {
 
-  e.preventDefault();
   getWeather(searchInput.value);
   searchInput.value = '';
+
+  e.preventDefault();
 
 
 });
@@ -37,28 +38,17 @@ const getWeather = async (city) => {
     temperatureDescription.textContent = description;
     Humidity.textContent = ' Humidity :' + humidity + '%';
     feelsLike.textContent = 'Feels like :' + Math.floor(feels_like - 273) + '°C';
-    feelsLike.style.fontSize = "xx-large";
-    Humidity.style.fontSize = "xx-large";
+    feelsLike.style.fontSize = "x-large";
+    Humidity.style.fontSize = "x-large";
     feelsLike.style.fontWeight = "bold";
     Humidity.style.fontWeight = "bold";
 
-
-    let farenhite = ((temp - 273) * 9) / 5 + 32;
-    temperatureSection.addEventListener("click", () => {
-      if (temperatureDegree.textContent = Math.floor(temp - 273) + '°C') {
-        temperatureDegree.textContent = Math.floor(farenhite) + '°F';
-      }
-      else {
-        temperatureDegree.textContent = Math.floor(temp - 273) + '°C';
-        console.log("ok");
-      }
-    })
 
     if (id < 300 && id > 200) {
       tempicon.src = "./icons/thunderstorm.svg";
     }
     else if (id < 400 && id > 300) {
-      tempicon.src = "./icons/cloud-solid.svg";
+      tempicon.src = "./icons/cloud.svg";
     }
     else if (id < 600 && id > 500) {
       tempicon.src = "./icons/rain.svg";
@@ -75,7 +65,6 @@ const getWeather = async (city) => {
     else if (id > 800) {
       tempicon.src = "./icons/cloud.svg"
     }
-
 
 
 
@@ -143,28 +132,16 @@ window.addEventListener("load", () => {
           temperatureDescription.textContent = description;
           Humidity.textContent = ' Humidity :' + humidity + '%';
           feelsLike.textContent = 'Feels like :' + Math.floor(feels_like - 273) + '°C';
-          feelsLike.style.fontSize = "xx-large";
-          Humidity.style.fontSize = "xx-large";
+          feelsLike.style.fontSize = "x-large";
+          Humidity.style.fontSize = "x-large";
           feelsLike.style.fontWeight = "bold";
           Humidity.style.fontWeight = "bold";
-
-
-          let farenhite = ((temp - 273) * 9) / 5 + 32;
-          temperatureSection.addEventListener("click", () => {
-            if (temperatureDegree.textContent = Math.floor(temp - 273) + '°C') {
-              temperatureDegree.textContent = Math.floor(farenhite) + '°F';
-            }
-            else {
-              temperatureDegree.textContent = Math.floor(temp - 273) + '°C';
-              console.log("ok");
-            }
-          })
 
           if (id < 300 && id > 200) {
             tempicon.src = "./icons/thunderstorm.svg";
           }
           else if (id < 400 && id > 300) {
-            tempicon.src = "./icons/cloud-solid.svg";
+            tempicon.src = "./icons/cloud.svg";
           }
           else if (id < 600 && id > 500) {
             tempicon.src = "./icons/rain.svg";
